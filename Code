@@ -3,7 +3,7 @@ int b[10];
 int v[10];
 int v2[10];
 int main()
-{int a;
+{int a,k=0;
     printf("WELCOME TO TIC TAC TOE GAME\n");
     for(int z=1;z<=5;z++){
     printf("ENTER 1 MEMBER CHOICE:");
@@ -49,13 +49,16 @@ int main()
                 
                 
                 if(z==5)
-    break;
+                {printf("GAME HAS BEEN DRAWN BYE BYE!!!!!");k=1;
+    break;}
             }
         }
     }
     else{
     printf("ENTER A VALID NUMBER:");goto f;}
-    }
+    }if(k==1)
+    break;
+    else{
         printf("ENTER 2 MEMBER CHOICE:");
     z:{
     scanf("%d",&a);
@@ -104,7 +107,7 @@ int main()
     goto z;}
     }
         
-    }
+    }}
 
     
     
